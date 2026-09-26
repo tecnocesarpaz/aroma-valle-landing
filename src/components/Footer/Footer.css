@@ -1,0 +1,42 @@
+.footer {
+  background: var(--color-coffee-dark);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 2rem 0 2.5rem;
+}
+
+.footer-inner {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.footer-brand p,
+.footer-meta p {
+  margin: 0.75rem 0 0;
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 600;
+}
+
+.footer-meta {
+  display: grid;
+  gap: 0.3rem;
+}
+
+@media (min-width: 700px) {
+  .footer-inner {
+    grid-template-columns: 1.2fr 0.8fr 0.8fr;
+    align-items: start;
+  }
+}

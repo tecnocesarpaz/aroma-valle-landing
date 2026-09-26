@@ -1,0 +1,209 @@
+.hero {
+  position: relative;
+  background:
+    radial-gradient(circle at top left, rgba(201, 138, 68, 0.18), transparent 30%),
+    linear-gradient(180deg, #f8f2ea 0%, #f3e7d1 100%);
+}
+
+.hero-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3.5rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--color-coffee-dark);
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background: rgba(94, 63, 43, 0.08);
+}
+
+.nav-links {
+  display: none;
+  gap: 1.5rem;
+  color: rgba(53, 36, 29, 0.8);
+  font-weight: 600;
+}
+
+.hero-content {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.hero-copy {
+  max-width: 580px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(86, 108, 75, 0.08);
+  color: var(--color-forest);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+  color: var(--color-coffee-dark);
+}
+
+.hero-copy p {
+  margin: 1.1rem 0 0;
+  max-width: 520px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(53, 36, 29, 0.82);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.6rem;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+
+.hero-stats li {
+  padding: 0.9rem 0.7rem;
+  border: 1px solid rgba(76, 42, 30, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(4px);
+}
+
+.hero-stats strong {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--color-coffee-dark);
+}
+
+.hero-stats span {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.75rem;
+  color: rgba(53, 36, 29, 0.7);
+}
+
+.hero-card {
+  position: relative;
+  width: min(100%, 430px);
+  margin: 0 auto;
+  padding: 1.1rem;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.2));
+  border: 1px solid rgba(76, 42, 30, 0.08);
+  box-shadow: var(--shadow-soft);
+}
+
+.card-badge {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(109, 122, 82, 0.12);
+  color: var(--color-forest);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.card-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 210px;
+  margin-top: 0.9rem;
+  border-radius: 24px;
+  background: linear-gradient(160deg, #e6b67d 0%, #d58e57 100%);
+  box-shadow: inset 0 24px 40px rgba(255,255,255,0.22);
+}
+
+.cup-symbol {
+  font-size: clamp(4rem, 12vw, 7rem);
+  filter: drop-shadow(0 14px 18px rgba(92, 56, 37, 0.25));
+}
+
+.card-bottom {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card-label {
+  margin: 0;
+  color: rgba(53, 36, 29, 0.68);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card-bottom h2 {
+  margin: 0.35rem 0 0;
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+  color: var(--color-coffee-dark);
+}
+
+.card-price {
+  display: inline-block;
+  padding: 0.7rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(76, 42, 30, 0.08);
+  color: var(--color-coffee);
+  font-weight: 800;
+}
+
+@media (min-width: 700px) {
+  .hero-inner {
+    padding-top: 1.25rem;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .hero-content {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 2.5rem;
+    padding-top: 2.5rem;
+  }
+}
